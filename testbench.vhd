@@ -58,49 +58,81 @@ begin
         i1 <= '0';
         ci <= '0';
 
-        wait for 20 ns;
+        wait for 10 ns;
+
+        assert (s = '0') and (co = '0') severity error;
+
+        wait for 10 ns;
 
         i0 <= '1';
         i1 <= '0';
         ci <= '0';
 
-        wait for 20 ns;
+        wait for 10 ns;
+
+        assert (s = '1') and (co = '0') severity error;
+
+        wait for 10 ns;
 
         i0 <= '0';
         i1 <= '1';
         ci <= '0';
 
-        wait for 20 ns;
+        wait for 10 ns;
+
+        assert (s = '1') and (co = '0') severity error;
+
+        wait for 10 ns;
 
         i0 <= '1';
         i1 <= '1';
         ci <= '0';
 
-        wait for 20 ns;
+        wait for 10 ns;
+
+        assert (s = '0') and (co = '1') severity error;
+
+        wait for 10 ns;
 
         i0 <= '0';
         i1 <= '0';
         ci <= '1';
 
-        wait for 20 ns;
+        wait for 10 ns;
+
+        assert (s = '1') and (co = '0') severity error;
+
+        wait for 10 ns;
 
         i0 <= '1';
         i1 <= '0';
         ci <= '1';
 
-        wait for 20 ns;
+        wait for 10 ns;
+
+        assert (s = '0') and (co = '1') severity error;
+
+        wait for 10 ns;
 
         i0 <= '0';
         i1 <= '1';
         ci <= '1';
 
-        wait for 20 ns;
+        wait for 10 ns;
+
+        assert (s = '0') and (co = '1') severity error;
+
+        wait for 10 ns;
 
         i0 <= '1';
         i1 <= '1';
         ci <= '1';
         
-        wait for 20 ns;
+        wait for 10 ns;
+
+        assert (s = '1') and (co = '1') severity error;
+
+        wait for 10 ns;
         stop_sim <= true;
         wait;
     end process stim;
