@@ -7,7 +7,7 @@ GHDL_IFLAGS?=
 GHDL_MFLAGS?=
 GHDL_AFLAGS?=
 
-VHDL_SOURCES=$(wildcard *.vhd)
+VHDL_SOURCES=$(wildcard *.vhd) $(wildcard src/*.vhd)
 
 all: test_bench.ghw
 
