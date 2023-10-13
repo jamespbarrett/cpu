@@ -7,8 +7,8 @@ GHDL_IFLAGS?=
 GHDL_MFLAGS?=
 GHDL_AFLAGS?=
 
-VHDL_SOURCES=$(wildcard *.vhd) $(wildcard rtl/*.vhd)
-TB_SOURCES=$(wildcard rtl/*_tb.vhd)
+VHDL_SOURCES=$(wildcard *.vhd) $(wildcard rtl/*.vhd) $(wildcard sim/*.vhd)
+TB_SOURCES=$(wildcard rtl/*_tb.vhd) $(wildcard sim/*_tb.vhd)
 
 all: list_tb
 
@@ -33,4 +33,3 @@ list_tb: ${WORKDIR}/work-obj${STD}.cf
 clean:
 	-rm -rf ${WORKDIR}/*
 	-rm -rf *.ghw
-
