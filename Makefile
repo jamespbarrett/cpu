@@ -7,11 +7,12 @@ GHDL_IFLAGS?=
 GHDL_MFLAGS?=
 GHDL_AFLAGS?=
 
-VHDL_SOURCES=$(wildcard *.vhd) $(wildcard src/*.vhd)
+VHDL_SOURCES=$(wildcard *.vhd) $(wildcard rtl/*.vhd)
+TB_SOURCES=$(wildcard rtl/*_tb.vhd)
 
-all: test_bench.ghw
+all: list_tb
 
-.DUMMY: clean
+.DUMMY: all clean list_tb
 
 ${WORKDIR}:
 	mkdir -p $<
@@ -25,6 +26,11 @@ make-%: ${WORKDIR}/work-obj${STD}.cf
 %.ghw: make-%
 	${GHDL} -r ${GHDL_FLAGS} ${GHDL_RFLAGS} $* --wave=$@
 
+list_tb: ${WORKDIR}/work-obj${STD}.cf
+	@echo "Valid test bench targets:"
+	@sed -n '/architecture test/{s/.*architecture test of \([a-zA-Z0-9_]*\).*/    \1.ghw/;p;}' $<
+
 clean:
 	-rm -rf ${WORKDIR}/*
+	-rm -rf *.ghw
 

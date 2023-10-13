@@ -1,10 +1,10 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity test_bench is
-end entity test_bench;
+entity add_tb is
+end entity add_tb;
 
-architecture test of test_bench is
+architecture test of add_tb is
     signal clock : std_logic := '0';
     signal reset : std_logic := '0';
 
