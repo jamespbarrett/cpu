@@ -1,0 +1,36 @@
+[*]
+[*] GTKWave Analyzer v3.3.107 (w)1999-2020 BSI
+[*] Fri Oct 13 19:06:05 2023
+[*]
+[dumpfile] "/Users/jpw/src/cpu/alu_tb.ghw"
+[dumpfile_mtime] "Fri Oct 13 19:04:22 2023"
+[dumpfile_size] 668
+[savefile] "/Users/jpw/src/cpu/alu_tb.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*0.000000 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.alu_tb.
+[sst_width] 193
+[signals_width] 90
+[sst_expanded] 1
+[sst_vpaned_height] 167
+@22
+#{top.alu_tb.x[15:0]} top.alu_tb.x[15] top.alu_tb.x[14] top.alu_tb.x[13] top.alu_tb.x[12] top.alu_tb.x[11] top.alu_tb.x[10] top.alu_tb.x[9] top.alu_tb.x[8] top.alu_tb.x[7] top.alu_tb.x[6] top.alu_tb.x[5] top.alu_tb.x[4] top.alu_tb.x[3] top.alu_tb.x[2] top.alu_tb.x[1] top.alu_tb.x[0]
+#{top.alu_tb.y[15:0]} top.alu_tb.y[15] top.alu_tb.y[14] top.alu_tb.y[13] top.alu_tb.y[12] top.alu_tb.y[11] top.alu_tb.y[10] top.alu_tb.y[9] top.alu_tb.y[8] top.alu_tb.y[7] top.alu_tb.y[6] top.alu_tb.y[5] top.alu_tb.y[4] top.alu_tb.y[3] top.alu_tb.y[2] top.alu_tb.y[1] top.alu_tb.y[0]
+@28
+top.alu_tb.zx
+top.alu_tb.nx
+top.alu_tb.zy
+top.alu_tb.ny
+top.alu_tb.f
+@29
+top.alu_tb.no
+@22
+#{top.alu_tb.o[15:0]} top.alu_tb.o[15] top.alu_tb.o[14] top.alu_tb.o[13] top.alu_tb.o[12] top.alu_tb.o[11] top.alu_tb.o[10] top.alu_tb.o[9] top.alu_tb.o[8] top.alu_tb.o[7] top.alu_tb.o[6] top.alu_tb.o[5] top.alu_tb.o[4] top.alu_tb.o[3] top.alu_tb.o[2] top.alu_tb.o[1] top.alu_tb.o[0]
+@28
+top.alu_tb.ng
+top.alu_tb.zr
+[pattern_trace] 1
+[pattern_trace] 0
