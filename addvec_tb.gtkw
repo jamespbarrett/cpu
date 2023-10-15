@@ -1,0 +1,29 @@
+[*]
+[*] GTKWave Analyzer v3.3.107 (w)1999-2020 BSI
+[*] Sun Oct 15 10:53:19 2023
+[*]
+[dumpfile] "/Users/jpw/src/cpu/addvec_tb.ghw"
+[dumpfile_mtime] "Sun Oct 15 10:51:58 2023"
+[dumpfile_size] 14830
+[savefile] "/Users/jpw/src/cpu/addvec_tb.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-29.605406 49300000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.addvec_tb.
+[sst_width] 193
+[signals_width] 124
+[sst_expanded] 1
+[sst_vpaned_height] 167
+@22
+#{top.addvec_tb.i0[15:0]} top.addvec_tb.i0[15] top.addvec_tb.i0[14] top.addvec_tb.i0[13] top.addvec_tb.i0[12] top.addvec_tb.i0[11] top.addvec_tb.i0[10] top.addvec_tb.i0[9] top.addvec_tb.i0[8] top.addvec_tb.i0[7] top.addvec_tb.i0[6] top.addvec_tb.i0[5] top.addvec_tb.i0[4] top.addvec_tb.i0[3] top.addvec_tb.i0[2] top.addvec_tb.i0[1] top.addvec_tb.i0[0]
+#{top.addvec_tb.i1[15:0]} top.addvec_tb.i1[15] top.addvec_tb.i1[14] top.addvec_tb.i1[13] top.addvec_tb.i1[12] top.addvec_tb.i1[11] top.addvec_tb.i1[10] top.addvec_tb.i1[9] top.addvec_tb.i1[8] top.addvec_tb.i1[7] top.addvec_tb.i1[6] top.addvec_tb.i1[5] top.addvec_tb.i1[4] top.addvec_tb.i1[3] top.addvec_tb.i1[2] top.addvec_tb.i1[1] top.addvec_tb.i1[0]
+#{top.addvec_tb.s[15:0]} top.addvec_tb.s[15] top.addvec_tb.s[14] top.addvec_tb.s[13] top.addvec_tb.s[12] top.addvec_tb.s[11] top.addvec_tb.s[10] top.addvec_tb.s[9] top.addvec_tb.s[8] top.addvec_tb.s[7] top.addvec_tb.s[6] top.addvec_tb.s[5] top.addvec_tb.s[4] top.addvec_tb.s[3] top.addvec_tb.s[2] top.addvec_tb.s[1] top.addvec_tb.s[0]
+#{top.addvec_tb.exp_s[15:0]} top.addvec_tb.exp_s[15] top.addvec_tb.exp_s[14] top.addvec_tb.exp_s[13] top.addvec_tb.exp_s[12] top.addvec_tb.exp_s[11] top.addvec_tb.exp_s[10] top.addvec_tb.exp_s[9] top.addvec_tb.exp_s[8] top.addvec_tb.exp_s[7] top.addvec_tb.exp_s[6] top.addvec_tb.exp_s[5] top.addvec_tb.exp_s[4] top.addvec_tb.exp_s[3] top.addvec_tb.exp_s[2] top.addvec_tb.exp_s[1] top.addvec_tb.exp_s[0]
+@28
+top.addvec_tb.co
+@29
+top.addvec_tb.exp_co
+[pattern_trace] 1
+[pattern_trace] 0

@@ -24,16 +24,16 @@ architecture rtl of alu is
     signal y2 : std_logic_vector(15 downto 0);
 
     signal a  : std_logic_vector(15 downto 0); 
-
     signal s  : std_logic_vector(15 downto 0);
-    signal c  : std_logic_vector(16 downto 0);
-
-    component add 
+    
+    component addvec
+        generic(
+            N : integer := 16
+        );
         port(
-            i0 : in  std_logic;
-            i1 : in  std_logic;
-            ci : in  std_logic;
-            s  : out std_logic;
+            i0 : in  std_logic_vector(N - 1 downto 0);
+            i1 : in  std_logic_vector(N - 1 downto 0);
+            s  : out std_logic_vector(N - 1 downto 0);
             co : out std_logic
         );
     end component;
@@ -41,8 +41,6 @@ architecture rtl of alu is
     signal o1 : std_logic_vector(15 downto 0);
     signal o2 : std_logic_vector(15 downto 0);
 begin
-
-    c(0) <= '0';
 
     gen1: for i in 15 downto 0 generate
         x1(i) <= x(i) and not zx;
@@ -53,20 +51,19 @@ begin
 
         a(i) <= x2(i) and y2(i);
     
-        adder: add
-            port map (
-                i0 => x2(i),
-                i1 => y2(i),
-                ci => c(i),
-                s  => s(i),
-                co => c(i+1)
-            );
-
         o1(i) <= (s(i) and f) or (a(i) and not f);
         o2(i) <= o1(i) xor no;
 
-        o(i) <= o2(i);
+        o(i) <= o2(i) after 1 ns;
     end generate;
+
+    adder: addvec
+        port map (
+            i0 => x2,
+            i1 => y2,
+            s  => s,
+            co => open
+        );
 
     zr <= not (
         (
@@ -86,7 +83,7 @@ begin
                 (o2(1) or o2(0))
             )
         )
-    );
+    ) after 1 ns;
 
-    ng <= o2(15);
+    ng <= o2(15) after 1 ns;
 end rtl;
