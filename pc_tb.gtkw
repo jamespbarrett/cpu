@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.107 (w)1999-2020 BSI
+[*] Sun Oct 15 11:48:58 2023
+[*]
+[dumpfile] "/Users/jpw/src/cpu/pc_tb.ghw"
+[dumpfile_mtime] "Sun Oct 15 11:47:33 2023"
+[dumpfile_size] 30640
+[savefile] "/Users/jpw/src/cpu/pc_tb.gtkw"
+[timestart] 3481540000
+[size] 1000 600
+[pos] -1 -1
+*-23.720049 3502000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.pc_tb.
+[sst_width] 193
+[signals_width] 167
+[sst_expanded] 1
+[sst_vpaned_height] 167
+@28
+top.pc_tb.clock
+top.pc_tb.reset
+@22
+#{top.pc_tb.output[15:0]} top.pc_tb.output[15] top.pc_tb.output[14] top.pc_tb.output[13] top.pc_tb.output[12] top.pc_tb.output[11] top.pc_tb.output[10] top.pc_tb.output[9] top.pc_tb.output[8] top.pc_tb.output[7] top.pc_tb.output[6] top.pc_tb.output[5] top.pc_tb.output[4] top.pc_tb.output[3] top.pc_tb.output[2] top.pc_tb.output[1] top.pc_tb.output[0]
+#{top.pc_tb.input[15:0]} top.pc_tb.input[15] top.pc_tb.input[14] top.pc_tb.input[13] top.pc_tb.input[12] top.pc_tb.input[11] top.pc_tb.input[10] top.pc_tb.input[9] top.pc_tb.input[8] top.pc_tb.input[7] top.pc_tb.input[6] top.pc_tb.input[5] top.pc_tb.input[4] top.pc_tb.input[3] top.pc_tb.input[2] top.pc_tb.input[1] top.pc_tb.input[0]
+@28
+top.pc_tb.set
+@23
+#{top.pc_tb.exp_output[15:0]} top.pc_tb.exp_output[15] top.pc_tb.exp_output[14] top.pc_tb.exp_output[13] top.pc_tb.exp_output[12] top.pc_tb.exp_output[11] top.pc_tb.exp_output[10] top.pc_tb.exp_output[9] top.pc_tb.exp_output[8] top.pc_tb.exp_output[7] top.pc_tb.exp_output[6] top.pc_tb.exp_output[5] top.pc_tb.exp_output[4] top.pc_tb.exp_output[3] top.pc_tb.exp_output[2] top.pc_tb.exp_output[1] top.pc_tb.exp_output[0]
+@28
+top.pc_tb.good
+[pattern_trace] 1
+[pattern_trace] 0
