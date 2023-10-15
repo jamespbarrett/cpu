@@ -9,11 +9,10 @@ architecture test of mem_tb is
     signal clock : std_logic := '0';
     signal reset : std_logic := '0';
 
-    signal A    : std_logic_vector(14 downto 0);
-    signal DIN  : std_logic_vector(15 downto 0);
-    signal W    : std_logic;
+    signal A    : std_logic_vector(14 downto 0) := (others => '0');
+    signal DIN  : std_logic_vector(15 downto 0) := (others => '0');
+    signal W    : std_logic := '0';
     signal DOUT : std_logic_vector(15 downto 0);
-    signal VLD  : std_logic;
 
     component mem 
         port(
@@ -22,8 +21,7 @@ architecture test of mem_tb is
             A    : in  std_logic_vector(14 downto 0);
             DIN  : in  std_logic_vector(15 downto 0);
             W    : in  std_logic;
-            DOUT : out std_logic_vector(15 downto 0);
-            VLD  : out std_logic
+            DOUT : out std_logic_vector(15 downto 0)
         );
     end component;
 
@@ -37,8 +35,7 @@ begin
             A    => A,
             DIN  => DIN,
             W    => W,
-            DOUT => DOUT,
-            VLD  => VLD
+            DOUT => DOUT
         );
 
     process begin
@@ -82,12 +79,15 @@ begin
             DIN <= (others => 'X');
             W <= '0';
             
-            wait until falling_edge(clock);
+            wait until rising_edge(clock);
             
             assert(to_integer(unsigned(DOUT)) = 65535 - addr);
 
             wait until falling_edge(clock);
         end loop;
+
+        wait until rising_edge(clock);
+        wait until falling_edge(clock);
 
         stop_sim <= true;
         wait;

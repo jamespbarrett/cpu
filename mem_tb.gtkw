@@ -1,0 +1,30 @@
+[*]
+[*] GTKWave Analyzer v3.3.107 (w)1999-2020 BSI
+[*] Sun Oct 15 10:24:25 2023
+[*]
+[dumpfile] "/Users/jpw/src/cpu/mem_tb.ghw"
+[dumpfile_mtime] "Sun Oct 15 10:23:09 2023"
+[dumpfile_size] 3441305
+[savefile] "/Users/jpw/src/cpu/mem_tb.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*0.000000 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.mem_tb.
+[sst_width] 193
+[signals_width] 116
+[sst_expanded] 1
+[sst_vpaned_height] 167
+@28
+top.mem_tb.clock
+top.mem_tb.reset
+@22
+#{top.mem_tb.a[14:0]} top.mem_tb.a[14] top.mem_tb.a[13] top.mem_tb.a[12] top.mem_tb.a[11] top.mem_tb.a[10] top.mem_tb.a[9] top.mem_tb.a[8] top.mem_tb.a[7] top.mem_tb.a[6] top.mem_tb.a[5] top.mem_tb.a[4] top.mem_tb.a[3] top.mem_tb.a[2] top.mem_tb.a[1] top.mem_tb.a[0]
+#{top.mem_tb.din[15:0]} top.mem_tb.din[15] top.mem_tb.din[14] top.mem_tb.din[13] top.mem_tb.din[12] top.mem_tb.din[11] top.mem_tb.din[10] top.mem_tb.din[9] top.mem_tb.din[8] top.mem_tb.din[7] top.mem_tb.din[6] top.mem_tb.din[5] top.mem_tb.din[4] top.mem_tb.din[3] top.mem_tb.din[2] top.mem_tb.din[1] top.mem_tb.din[0]
+@28
+top.mem_tb.w
+@23
+#{top.mem_tb.dout[15:0]} top.mem_tb.dout[15] top.mem_tb.dout[14] top.mem_tb.dout[13] top.mem_tb.dout[12] top.mem_tb.dout[11] top.mem_tb.dout[10] top.mem_tb.dout[9] top.mem_tb.dout[8] top.mem_tb.dout[7] top.mem_tb.dout[6] top.mem_tb.dout[5] top.mem_tb.dout[4] top.mem_tb.dout[3] top.mem_tb.dout[2] top.mem_tb.dout[1] top.mem_tb.dout[0]
+[pattern_trace] 1
+[pattern_trace] 0

@@ -10,18 +10,15 @@ entity rom is
         filename : string := "data.rom"
     );
     port(
-        CLK  : in  std_logic;
-        RST  : in  std_logic;
         A    : in  std_logic_vector(14 downto 0);
-        DOUT : out std_logic_vector(15 downto 0);
-        VLD  : out std_logic
+        DOUT : out std_logic_vector(15 downto 0)
     );
 end entity rom;
 
 architecture sim of rom is
     type MEMDATA is array (natural range <>) of integer range 0 to 65535;
 
-    signal DATA : MEMDATA(32767 downto 0);
+    signal DATA : MEMDATA(32767 downto 0) := (others => 0);
 begin
 
     process
@@ -47,20 +44,9 @@ begin
         wait;
     end process;
 
-    process (CLK, RST)
-        variable addr : integer range 0 to 32767;
+    process (A, DATA)
     begin
-        if rising_edge(CLK) then
-            if RST = '0' then
-                VLD  <= '0';
-                DOUT <= (others => '0');
-            else
-                addr := to_integer(unsigned(A));
-                
-                DOUT <= std_logic_vector(to_unsigned(DATA(addr), 16));
-                VLD  <= '1';
-            end if;
-        end if;
+        DOUT <= std_logic_vector(to_unsigned(DATA(to_integer(unsigned(A))), 16)) after 1 ns;
     end process;
 
 end sim;
