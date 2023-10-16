@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.107 (w)1999-2020 BSI
+[*] Mon Oct 16 11:40:00 2023
+[*]
+[dumpfile] "/Users/jpw/src/cpu/cpu_tb.ghw"
+[dumpfile_mtime] "Mon Oct 16 11:36:55 2023"
+[dumpfile_size] 247211
+[savefile] "/Users/jpw/src/cpu/cpu_tb.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-25.378624 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.cpu_tb.
+[sst_width] 193
+[signals_width] 159
+[sst_expanded] 1
+[sst_vpaned_height] 167
+@28
+top.cpu_tb.clock
+top.cpu_tb.reset
+@22
+#{top.cpu_tb.inst_addr[14:0]} top.cpu_tb.inst_addr[14] top.cpu_tb.inst_addr[13] top.cpu_tb.inst_addr[12] top.cpu_tb.inst_addr[11] top.cpu_tb.inst_addr[10] top.cpu_tb.inst_addr[9] top.cpu_tb.inst_addr[8] top.cpu_tb.inst_addr[7] top.cpu_tb.inst_addr[6] top.cpu_tb.inst_addr[5] top.cpu_tb.inst_addr[4] top.cpu_tb.inst_addr[3] top.cpu_tb.inst_addr[2] top.cpu_tb.inst_addr[1] top.cpu_tb.inst_addr[0]
+#{top.cpu_tb.inst_in[15:0]} top.cpu_tb.inst_in[15] top.cpu_tb.inst_in[14] top.cpu_tb.inst_in[13] top.cpu_tb.inst_in[12] top.cpu_tb.inst_in[11] top.cpu_tb.inst_in[10] top.cpu_tb.inst_in[9] top.cpu_tb.inst_in[8] top.cpu_tb.inst_in[7] top.cpu_tb.inst_in[6] top.cpu_tb.inst_in[5] top.cpu_tb.inst_in[4] top.cpu_tb.inst_in[3] top.cpu_tb.inst_in[2] top.cpu_tb.inst_in[1] top.cpu_tb.inst_in[0]
+#{top.cpu_tb.data_addr[14:0]} top.cpu_tb.data_addr[14] top.cpu_tb.data_addr[13] top.cpu_tb.data_addr[12] top.cpu_tb.data_addr[11] top.cpu_tb.data_addr[10] top.cpu_tb.data_addr[9] top.cpu_tb.data_addr[8] top.cpu_tb.data_addr[7] top.cpu_tb.data_addr[6] top.cpu_tb.data_addr[5] top.cpu_tb.data_addr[4] top.cpu_tb.data_addr[3] top.cpu_tb.data_addr[2] top.cpu_tb.data_addr[1] top.cpu_tb.data_addr[0]
+#{top.cpu_tb.data_in[15:0]} top.cpu_tb.data_in[15] top.cpu_tb.data_in[14] top.cpu_tb.data_in[13] top.cpu_tb.data_in[12] top.cpu_tb.data_in[11] top.cpu_tb.data_in[10] top.cpu_tb.data_in[9] top.cpu_tb.data_in[8] top.cpu_tb.data_in[7] top.cpu_tb.data_in[6] top.cpu_tb.data_in[5] top.cpu_tb.data_in[4] top.cpu_tb.data_in[3] top.cpu_tb.data_in[2] top.cpu_tb.data_in[1] top.cpu_tb.data_in[0]
+#{top.cpu_tb.data_out[15:0]} top.cpu_tb.data_out[15] top.cpu_tb.data_out[14] top.cpu_tb.data_out[13] top.cpu_tb.data_out[12] top.cpu_tb.data_out[11] top.cpu_tb.data_out[10] top.cpu_tb.data_out[9] top.cpu_tb.data_out[8] top.cpu_tb.data_out[7] top.cpu_tb.data_out[6] top.cpu_tb.data_out[5] top.cpu_tb.data_out[4] top.cpu_tb.data_out[3] top.cpu_tb.data_out[2] top.cpu_tb.data_out[1] top.cpu_tb.data_out[0]
+@29
+top.cpu_tb.data_w
+[pattern_trace] 1
+[pattern_trace] 0

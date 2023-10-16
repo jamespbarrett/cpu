@@ -2,18 +2,21 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity pc is
+    generic(
+        WIDTH : integer := 15
+    );
     port(
         clock  : in  std_logic;
         reset  : in  std_logic;
-        input  : in  std_logic_vector(15 downto 0);
+        input  : in  std_logic_vector(WIDTH-1 downto 0);
         set    : in  std_logic;
-        output : out std_logic_vector(15 downto 0)
+        output : out std_logic_vector(WIDTH-1 downto 0)
     );
 end entity pc;
 
 architecture rtl of pc is
-    signal pc_reg  : std_logic_vector(15 downto 0) := (others => '0');
-    signal pc_next : std_logic_vector(15 downto 0);
+    signal pc_reg  : std_logic_vector(WIDTH-1 downto 0) := (others => '0');
+    signal pc_next : std_logic_vector(WIDTH-1 downto 0);
 
     component addvec
         generic(
@@ -47,11 +50,11 @@ begin
 
     adder: addvec
         generic map (
-            N => 16
+            N => WIDTH
         )
         port map (
             i0 => pc_reg,
-            i1 => x"0001",
+            i1 => (0 => '1', others => '0'),
             s  => pc_next,
             co => open
         );

@@ -16,12 +16,15 @@ architecture test of pc_tb is
     signal exp_output : std_logic_vector(15 downto 0) := (others => 'U');
 
     component pc 
+        generic(
+            WIDTH : integer := 15
+        );
         port(
             clock  : in  std_logic;
             reset  : in  std_logic;
-            input  : in  std_logic_vector(15 downto 0);
+            input  : in  std_logic_vector(WIDTH-1 downto 0);
             set    : in  std_logic;
-            output : out std_logic_vector(15 downto 0)
+            output : out std_logic_vector(WIDTH-1 downto 0)
         );
     end component;
 
@@ -31,6 +34,9 @@ architecture test of pc_tb is
 begin
 
     UUT: pc
+        generic map (
+            WIDTH => 16
+        )
         port map (
             clock  => clock,
             reset  => reset,

@@ -6,6 +6,7 @@ GHDL_FLAGS?=--workdir=${WORKDIR} --std=${STD}
 GHDL_IFLAGS?=
 GHDL_MFLAGS?=
 GHDL_AFLAGS?=
+GHDL_RFLAGS?=
 
 VHDL_SOURCES=$(wildcard *.vhd) $(wildcard rtl/*.vhd) $(wildcard sim/*.vhd)
 TB_SOURCES=$(wildcard rtl/*_tb.vhd) $(wildcard sim/*_tb.vhd)
@@ -24,7 +25,7 @@ make-%: ${WORKDIR}/work-obj${STD}.cf
 	${GHDL} -m ${GHDL_FLAGS} ${GHDL_MFLAGS} $*
 
 %.ghw: make-%
-	${GHDL} -r ${GHDL_FLAGS} ${GHDL_RFLAGS} $* --wave=$@
+	${GHDL} -r ${GHDL_FLAGS} $* --wave=$@ ${GHDL_RFLAGS}
 
 list_tb: ${WORKDIR}/work-obj${STD}.cf
 	@echo "Valid test bench targets:"
