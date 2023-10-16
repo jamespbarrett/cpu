@@ -1,0 +1,30 @@
+[*]
+[*] GTKWave Analyzer v3.3.107 (w)1999-2020 BSI
+[*] Mon Oct 16 10:35:48 2023
+[*]
+[dumpfile] "/Users/jpw/src/cpu/jump_tb.ghw"
+[dumpfile_mtime] "Mon Oct 16 10:34:43 2023"
+[dumpfile_size] 681
+[savefile] "/Users/jpw/src/cpu/jump_tb.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-25.322161 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.jump_tb.
+[sst_width] 193
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 167
+@28
+top.jump_tb.jlt
+top.jump_tb.jz
+top.jump_tb.jgt
+top.jump_tb.zr
+top.jump_tb.ng
+top.jump_tb.j
+top.jump_tb.exp_j
+@29
+top.jump_tb.good
+[pattern_trace] 1
+[pattern_trace] 0
